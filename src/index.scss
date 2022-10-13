@@ -59,6 +59,7 @@ header {
 
     img {
       border-radius: 20px;
+      border: $Border-line;
     }
     h1 {
       font-family: $Righteous;
@@ -194,9 +195,10 @@ main {
 
   .categoriesUpCard:hover {
     box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.217);
-    transition: 1s;
+    transition: 0.8s;
+    transform: translateY(-5px);
     button {
-      transition: 1.5s;
+      transition: 1.2s;
       opacity: 1;
     }
   }
@@ -234,9 +236,10 @@ main {
 
   .categoriesDownCard:hover {
     box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.217);
-    transition: 1s;
+    transition: 0.8s;
+    transform: translateY(-5px);
     button {
-      transition: 1.5s;
+      transition: 1.2s;
       opacity: 1;
     }
   }
