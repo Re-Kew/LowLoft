@@ -3,11 +3,6 @@ $darkCrema: #d7d4cc;
 $Righteous: "Righteous", cursive;
 $Rubik: "Rubik", sans-serif;
 $Border-line: 1px solid $darkCrema;
-// $Inter: 'Righteous', cursive;
-
-.logo {
-  font-family: $Righteous;
-}
 
 body {
   font-family: "Rubik", "Righteous", system-ui;
@@ -40,12 +35,15 @@ header {
     column-gap: 20px;
     font-family: $Rubik;
   }
+  .logo {
+    font-family: $Righteous;
+  }
   .headerRight {
     column-gap: 20px;
     justify-content: flex-end;
   }
   .max-w-header {
-    width: 285.77px;
+    width: 250px;
   }
 }
 
@@ -158,7 +156,6 @@ header {
 }
 
 main {
-  border-bottom: 1px solid $darkCrema;
   .categories {
     margin: 60px 60px 30px 60px;
     .categoriesUpCard {
@@ -246,6 +243,7 @@ main {
 }
 
 footer {
+  border-top: $Border-line;
   img {
     margin: 30px 20px 30px 60px;
   }

@@ -1,0 +1,62 @@
+$crema: #f7f6f2;
+$darkCrema: #d7d4cc;
+$Righteous: "Righteous", cursive;
+$Rubik: "Rubik", sans-serif;
+$Border-line: 1px solid $darkCrema;
+
+.categoriesBlock {
+  display: flex;
+  margin: 30px 60px 30px 60px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .categoriesDownCard {
+    margin: 30px 6px 30px 6px;
+    overflow: hidden;
+    width: 211.2px;
+    border-radius: 20px;
+    border: $Border-line;
+
+    h1 {
+      font-family: $Rubik;
+      font-weight: 400;
+      font-size: 20px;
+    }
+
+    .photo {
+      margin-top: 5px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: $Border-line;
+
+      .photoButton {
+        margin: 5px;
+      }
+    }
+    .article {
+      display: flex;
+      justify-content: space-between;
+      margin: 5px 20px 5px 20px;
+      align-items: center;
+    }
+
+    button {
+      height: 40px;
+      width: 40px;
+      background: none;
+      border: none;
+      opacity: 0;
+      fill: #adadad;
+      cursor: pointer;
+    }
+  }
+}
+
+.categoriesDownCard:hover {
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.217);
+  transition: 0.8s;
+  transform: translateY(-5px);
+  button {
+    transition: 1.2s;
+    opacity: 1;
+  }
+}
